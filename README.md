@@ -6,7 +6,7 @@ This node is the perfect tool for cleaning up pixel art that has been resized, h
 
 ---
 
-## ## What It Does
+## What It Does
 
 This node solves a common problem where an image looks like pixel art but isn't technically correct. Instead of using a simple resize, which can blur the image, this node:
 
@@ -16,7 +16,7 @@ This node solves a common problem where an image looks like pixel art but isn't 
 
 ---
 
-## ## 🚀 Installation
+## 🚀 Installation
 
 The easiest way to install is by using the [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager).
 
@@ -27,21 +27,21 @@ The easiest way to install is by using the [ComfyUI Manager](https://github.com/
 
 ---
 
-## ## How to Use
+## How to Use
 
 Load the node by double-clicking the canvas and searching for `Pixel Art Doctor`.
 
-### ### Inputs
+### Inputs
 
 - **`image`**: The input 'fake' pixel art image that has artifacts or incorrect scaling.
 - **`detection_threshold`**: Controls the sensitivity of the pixel grid detection. The default of `0.1` works for most cases.
 
-### ### Outputs
+### Outputs
 
 - **`image`**: The final, downscaled image at its true native resolution. One pixel in this output corresponds to one visual pixel from the input.
 - **`detected_pixel_size`**: The average size (in pixels) of the square pixel blocks that were detected in the input image.
 
-### ### Example Workflow
+### Example Workflow
 
 The node outputs a small, native-resolution image. To view it larger, connect its output to an `ImageScale` node and set the `upscale_method` to `nearest-neighbor`.
 
